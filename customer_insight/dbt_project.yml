@@ -49,3 +49,7 @@ models:
 seeds:
   customer_insight:
     +schema: bronze
+    +column_types:
+      customer_id: integer
+      customer_name: string
+      customer_email: string
