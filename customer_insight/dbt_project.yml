@@ -44,3 +44,8 @@ models:
     #   +materialized: table
     #   +schema: gold
     #   +tags: ['gold']
+
+
+seeds:
+  customer_insight:
+    +schema: bronze
