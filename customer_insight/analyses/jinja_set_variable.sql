@@ -1,0 +1,1 @@
+{% set var_name = "customer_insight" %} {{ var_name }}
