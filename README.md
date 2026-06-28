@@ -31,10 +31,10 @@ DATABRICKS_TOKEN=your_databricks_token
 Check `profiles.yml` and update these values for your Databricks workspace:
 
 ```yaml
-catalog: dbt_tutirial_dev
-host: dbc-cf4af108-eeff.cloud.databricks.com
-http_path: /sql/1.0/warehouses/c1d96b3051eeb8c3
-schema: default
+catalog: your_catalog
+host: "{{ env_var('DATABRICKS_HOST') }}"
+http_path: "{{ env_var('DATABRICKS_HTTP_PATH') }}"
+schema: your_schema
 token: "{{ env_var('DATABRICKS_TOKEN') }}"
 ```
 
